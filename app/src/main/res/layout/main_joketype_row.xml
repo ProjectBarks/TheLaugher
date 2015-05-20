@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/jokeType"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    tools:background="@color/belize_hole">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/jokeTypeName"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/clouds"
+        tools:text="Random Jokes"/>
+</com.andexert.library.RippleView>

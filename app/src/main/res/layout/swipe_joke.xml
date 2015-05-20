@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:background="@color/green_sea">
+        <!--What you want to show-->
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/thumbsDown"
+            android:layout_weight="1"
+            ripple:rv_centered="true"
+            ripple:rv_type="doubleRipple"
+            style="@style/Ripple">
+
+            <ImageButton
+                style="@style/BottomViewImage"
+                android:src="@drawable/thumbs_down" />
+        </com.andexert.library.RippleView>
+
+        <View style="@style/Divider" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/thumbsUp"
+            android:layout_weight="1"
+            ripple:rv_centered="true"
+            ripple:rv_type="doubleRipple"
+            style="@style/Ripple">
+
+            <ImageButton
+                style="@style/BottomViewImage"
+                android:src="@drawable/thumbs_up" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--What you want to show in SurfaceView-->
+
+        <TextView
+            android:id="@+id/jokeContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/clouds"
+            android:background="@drawable/drop_shadow"
+            tools:text="Medium Text" />
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

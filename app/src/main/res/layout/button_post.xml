@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/post"
+    ripple:rv_type="doubleRipple"
+    ripple:rv_centered="true"
+    style="@style/Ripple">
+
+    <ImageView
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/create"/>
+</com.andexert.library.RippleView>
